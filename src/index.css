@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btnOption {
+    @apply flex px-3 py-1.5 bg-bgLight-hover hover:bg-bgLight-base dark:bg-bgDark-hover dark:hover:bg-bgDark-popDarker rounded;
+  }
+  .btnHeader {
+    @apply flex px-3 py-1.5 bg-bgLight-base hover:bg-bgLight-hover hover:text-bgLight-base  text-white dark:hover:bg-bgDark-pop dark:hover:text-bgDark-selected dark:bg-bgDark-popDarker rounded;
+  }
+  .btnInput {
+    @apply rounded p-1 bg-bgLight-input placeholder:text-white dark:bg-bgDark-input;
+  }
+  .defaultText {
+    @apply text-black/60 dark:text-white/40 text-sm;
+  }
+  .tableHeader {
+    @apply flex items-center py-2 rounded px-5 bg-bgLight-base text-white dark:bg-bgDark-popDarker;
+  }
+  .generalBody {
+    @apply h-full w-full min-h-fit flex flex-col gap-5 px-5 py-10  pb-32;
+  }
+}

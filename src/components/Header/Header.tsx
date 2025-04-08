@@ -5,17 +5,13 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
-    return (
-        <header className="flex flex-col w-[95%] mt-2 mb-4 border-b-gray-600">
-            <div className="flex w-full justify-between items-center py-5">
-                <div className='flex flex-row items-center gap-5'>
-                    <button className={`text-3xl font-titilliumWeb `} >
-                        {title}
-                    </button>
-                </div>
-            </div>
-        </header>
-    )
+  return (
+    <header className='w-full h-16 flex items-center px-5 py-2 border-b border-gray-300 dark:border-white'>
+      <p className="[font-family:'Roboto-Bold',Helvetica] font-bold  text-2xl">
+        {title}
+      </p>
+    </header>
+  )
 }
 
 export default Header;

@@ -1,14 +1,14 @@
-import React, { useContext } from "react";
-import { AuthContext } from "../../context/AuthContext";
+import React from "react";
 import logo from '/logo.svg'
 import LogoutIcon from '@mui/icons-material/Logout';
+import { useAuthContext } from "../../store/useAuthContext";
 
 interface MenuProps {
     setMenu: any;
 }
 
 const Menu: React.FC<MenuProps> = ({ setMenu }) => {
-    const { logOut } = useContext(AuthContext);
+    const { logOut } = useAuthContext()
     // const { mode, toggleColorMode } = useThemeContext();
 
     return (

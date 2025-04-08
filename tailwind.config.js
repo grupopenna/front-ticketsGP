@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -7,6 +8,33 @@ export default {
   theme: {
     extend: {
       colors: {
+        bgDark: {
+          'all': '#121212',
+          'hover': '#3A4C2E',
+          'popDarker': '#698b28',
+          'pop': '#92BC43',
+          'cards': '#2e3b39',
+          'secodCard': '#586261',
+          'selected': '#14251e',
+          'sectionBg': '#34514f',
+          'menu': '#252C2B',
+          'off': '#7A7A7A',
+          'input': '#668959',
+          100: '#192120',
+          400: '#252b2a',
+          600: '#636363',
+          660: '#646464/60',
+        },
+        bgLight: {
+          'base': '#0F72BA',
+          'cards': '#E4E7EC',
+          'hover': '#D2EBFD',
+          'input': '#79B0D9',
+          'sectionBg': '#bac6da',
+        },
+        colOff: {
+          'off': '#7A7A7A'
+        },
         primary: '#0078CE',
         secondary: '#88CCFC',
         background: '#EDEFF0',
@@ -26,6 +54,9 @@ export default {
       },
       borderColor: {
         'active': '#1E40AF',
+      },
+      dropShadow: {
+        'darkMode': '0 4px 5px rgba(255, 255, 255, 0.4)',
       },
     },
   },
